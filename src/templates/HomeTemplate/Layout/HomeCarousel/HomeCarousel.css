@@ -1,4 +1,16 @@
+.ant-carousel{
+    cursor: grab;
+}
+
+.ant-carousel:focus, .ant-carousel:active{
+    cursor: grabbing;
+}
+
 .slick-dots-bottom{
     margin: 0 !important;
     padding: 0 !important;
+}
+
+.slick-dots-bottom li button::before{
+    content: none!important;
 }

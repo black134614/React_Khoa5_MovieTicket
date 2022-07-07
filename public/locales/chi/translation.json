@@ -3,6 +3,10 @@
         "1":"你好",
         "2":"心潮"
     },
-    "signin":"登入",
-    "signup":"报名"
+    "Signin":"登入",
+    "Signup":"报名",
+    "Home": "家",
+    "Contact": "接觸",
+    "News" : "消息",
+    "Log out": "登出"
 }

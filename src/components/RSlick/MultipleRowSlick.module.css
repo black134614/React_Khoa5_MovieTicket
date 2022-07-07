@@ -4,16 +4,20 @@
     font-size: 3rem !important;
 }
 
-
 .width-item {
     width: 100%  !important;
 }
 
+button:active, button:focus{
+    @apply outline-none ease-in-out duration-300
+}
+
 .active_Film {
-    @apply bg-gray-800 text-white;
+    @apply bg-gray-800 text-white border outline-none;
+  
 }
 
 
 .none_active_Film {
-    @apply bg-white text-gray-800;
+    @apply text-gray-800 bg-gray-100 border border-gray-800 outline-none;
 }
