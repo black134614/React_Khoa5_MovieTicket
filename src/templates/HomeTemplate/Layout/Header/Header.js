@@ -71,6 +71,16 @@ export default function Header(props) {
                             {t('News')}
                         </NavLink>
                     </li>
+                    <li className="flex">
+                        <NavLink to="/admin" className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent text-white" activeClassName="border-b-2 border-white">
+                            {t('Admin Page')}
+                        </NavLink>
+                    </li>
+                    <li className="flex">
+                        <a href='movie-ticket-v2.surge.sh' target='_blank' className="flex items-center -mb-0.5 border-b-2 px-4 border-transparent text-white" activeClassName="border-b-2 border-white">
+                            Movie ticket v2
+                        </a>
+                    </li>
 
                 </ul>
                 <div className="items-center flex-shrink-0 hidden lg:flex">

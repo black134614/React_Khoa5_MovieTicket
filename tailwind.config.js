@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+    zaconst colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: [],

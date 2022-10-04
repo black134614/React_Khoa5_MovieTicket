@@ -6,6 +6,7 @@ import Film from '../Film/Film'
 import Film_Flip from "../Film/Film_Flip";
 import { useDispatch, useSelector } from "react-redux";
 import { SET_FILM_DANG_CHIEU, SET_FILM_SAP_CHIEU } from '../../redux/actions/types/QuanLyPhimType'
+import { useTranslation } from 'react-i18next';
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -48,6 +49,7 @@ const MultipleRowSlick = (props) => {
       </div>
     })
   }
+  const { t, i18n } = useTranslation();
   let activeClassDC = dangChieu === true ? 'active_Film' : 'none_active_Film';
 
   let activeClassSC = sapChieu === true ? 'active_Film' : 'none_active_Film';
@@ -111,13 +113,18 @@ const MultipleRowSlick = (props) => {
       <button className={`${styleSlick[activeClassDC]} px-8 py-3 font-semibold rounded mr-2`} onClick={() => {
         const action = { type: SET_FILM_DANG_CHIEU }
         dispatch(action);
-      }}>PHIM ĐANG CHIẾU
+      }}>
+        
+        {t('PHIM ĐANG CHIẾU')}
       </button>
 
       <button className={`${styleSlick[activeClassSC]} px-8 py-3 font-semibold rounded `} onClick={() => {
         const action = { type: SET_FILM_SAP_CHIEU }
         dispatch(action);
-      }}>PHIM SẮP CHIẾU</button>
+      }}>
+        
+        {t('PHIM SẮP CHIẾU')}
+      </button>
       <Slider {...settings}>
         {renderFilms()}
       </Slider>
